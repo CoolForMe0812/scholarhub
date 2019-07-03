@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/white">
+
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/red"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_centerInParent="true"
+                android:text="@string/Scholarhub"
+                android:textColor="@android:color/white"
+                android:textSize="30dp" />
+
+            <SearchView
+                android:id="@+id/mySearchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_centerInParent="true"
+                android:hint="@string/search"
+                android:iconifiedByDefault="false" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="160dp"
+        android:src="@drawable/book" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card2"
+        app:strokeWidth="2dp"
+        app:strokeColor="#ffff"
+        android:layout_above="@id/bvn"
+        android:layout_marginBottom="120dp"
+
+        app:cardCornerRadius="3dp"
+
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/Profile"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="300dp"
+            android:background="@drawable/circle"
+            tools:srcCompat="@tools:sample/avatars[0]" />
+
+        <TextView
+            android:id="@+id/title7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@id/imageView1"
+            android:text=" by Sum Ting Wong 3 hours ago" />
+
+        <TextView
+            android:id="@+id/title6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imageView1"
+            android:text="Deez nuts"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_alignBottom="@+id/card2"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Message" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="500dp"
+        android:background="@color/grey"></androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="86dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="104dp"
+        android:clickable="true"
+        android:src="@drawable/love"
+        app:backgroundTint="#F70000" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/bvn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-1dp"
+        android:background="@android:color/white"
+        app:itemIconTint="@android:color/black"
+        app:itemTextColor="@android:color/black"
+        app:menu="@menu/main_menu" />
+
+
+</RelativeLayout>
