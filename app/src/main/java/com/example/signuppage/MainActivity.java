@@ -15,7 +15,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
     FloatingActionButton floatingActionButton;
-    EditText Text1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
