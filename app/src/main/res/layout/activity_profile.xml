@@ -10,6 +10,21 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar"/>
 
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card2"
+        app:strokeWidth="2dp"
+        app:strokeColor="#ffff"
+
+        android:layout_marginBottom="160dp"
+        app:cardCornerRadius="3dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -47,6 +62,7 @@
         android:layout_marginTop="66dp"
         android:layout_toRightOf="@id/textView1"
         tools:srcCompat="@tools:sample/avatars[0]" />
+    </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/textView3"

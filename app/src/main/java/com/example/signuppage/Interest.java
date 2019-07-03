@@ -16,10 +16,11 @@ public class Interest extends AppCompatActivity {
         setContentView(R.layout.activity_interest);
 
         button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener(){
+        button.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(Interest.this, Post.class);
+                Intent intent = new Intent(Interest.this, Home.class);
                 startActivity(intent);
             }
         });
