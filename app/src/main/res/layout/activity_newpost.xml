@@ -38,7 +38,7 @@
         android:layout_below="@+id/title1"
         android:layout_marginLeft="20dp"
         android:hint="Enter title"
-        android:textColorHighlight="#ff7eff15"
+        android:textColorHighlight="@color/grey"
         android:textColorHint="#5E868485" />
 
     <TextView
@@ -96,7 +96,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="120dp"
         android:hint="Enter description"
-        android:textColorHighlight="#ffc7eff15"
+        android:textColorHighlight="@color/grey"
         android:textColorHint="#5E868485" />
 
     <TextView
@@ -228,7 +228,7 @@
     </androidx.viewpager.widget.ViewPager>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/floatingActionButton1"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentRight="true"

@@ -7,13 +7,19 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Home extends AppCompatActivity {
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+public class Home extends AppCompatActivity
+{
     Button button;
+    FloatingActionButton floatingActionButton;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
+        floatingActionButton = findViewById(R.id.floatingActionButton);
         button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener()
         {
@@ -25,5 +31,15 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        floatingActionButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+
+                Intent intent = new Intent(Home.this, CreatePost.class);
+                startActivity(intent);
+            }
+        });
     }
 }
