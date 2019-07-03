@@ -7,51 +7,17 @@
     tools:context=".MainActivity"
     android:background="@android:color/white">
 
-
-    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@color/red"
-        android:elevation="4dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="20dp"
-                android:layout_centerInParent="true"
-                android:text="@string/Scholarhub"
-                android:textColor="@android:color/white"
-                android:textSize="30dp" />
-
-            <SearchView
-                android:id="@+id/mySearchView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/title"
-                android:layout_centerInParent="true"
-                android:hint="@string/search"
-                android:iconifiedByDefault="false" />
-
-
-        </RelativeLayout>
-
-    </androidx.appcompat.widget.Toolbar>
-
-
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="340dp"
         android:src="@drawable/book" />
+
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,15 +25,11 @@
         app:strokeWidth="2dp"
         app:strokeColor="#ffff"
         android:layout_above="@id/bvn"
-        android:layout_marginBottom="120dp"
-
+        android:layout_marginBottom="160dp"
         app:cardCornerRadius="3dp"
-
         app:cardPreventCornerOverlap="true"
         app:cardUseCompatPadding="false"
         app:layout_constraintEnd_toEndOf="parent"
-
-
         app:layout_constraintStart_toStartOf="parent"
         >
 
@@ -116,8 +78,10 @@
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="500dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/bvn"
+        android:layout_marginTop="550dp"
+        android:layout_marginBottom="-2dp"
         android:background="@color/grey"></androidx.viewpager.widget.ViewPager>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -127,11 +91,12 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="86dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="95dp"
         android:clickable="true"
         android:src="@drawable/love"
         app:backgroundTint="#F70000" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="90dp"

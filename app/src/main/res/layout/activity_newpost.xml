@@ -8,48 +8,16 @@
     android:background="@color/white">
 
 
-    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@color/red"
-        android:elevation="4dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="20dp"
-                android:layout_centerInParent="true"
-                android:text="@string/Scholarhub"
-                android:textColor="@android:color/white"
-                android:textSize="30dp" />
-
-            <SearchView
-                android:id="@+id/mySearchView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/title"
-                android:layout_centerInParent="true"
-                android:hint="@string/search"
-                android:iconifiedByDefault="false" />
-
-
-        </RelativeLayout>
-
-    </androidx.appcompat.widget.Toolbar>
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_below="@id/title1"
-        android:layout_marginTop="434dp"
+        android:layout_marginTop="492dp"
         android:background="@color/grey"></androidx.viewpager.widget.ViewPager>
 
     <TextView
@@ -57,11 +25,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="70dp"
         android:layout_marginLeft="20dp"
         android:text="What are you selling?"
         android:textStyle="bold"
-        android:textSize="25dp"/>
+        android:textSize="14dp"/>
 
     <EditText
         android:id="@+id/editText2"
@@ -79,11 +47,11 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/buttonLoadPicture"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="-30dp"
         android:gravity="left"
         android:text="Images"
-        android:textSize="25dp"
+        android:textSize="14dp"
         android:textStyle="bold" />
 
     <ImageView
@@ -117,7 +85,7 @@
         android:layout_marginBottom="-125dp"
         android:gravity="left"
         android:text="Description?"
-        android:textSize="25dp"
+        android:textSize="14dp"
         android:textStyle="bold" />
 
     <EditText
@@ -136,13 +104,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text3"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:layout_marginRight="20dp"
         android:paddingLeft="30dp"
         android:text="Condition"
-        android:textSize="25dp"
+        android:textSize="14dp"
         android:textStyle="bold" />
     <RadioGroup
         android:layout_width="wrap_content"
@@ -150,7 +118,7 @@
         android:checkedButton="@+id/first"
         android:layout_below="@id/text3"
         android:orientation="vertical"
-        android:layout_margin="35dp"
+        android:layout_margin="20dp"
         >
 
         <RadioButton
@@ -198,7 +166,7 @@
         android:layout_marginBottom="0dp"
         android:paddingLeft="30dp"
         android:text="Deal Method"
-        android:textSize="25dp"
+        android:textSize="14dp"
         android:textStyle="bold" />
 
     <RadioGroup
@@ -266,8 +234,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="86dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="94dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="155dp"
         android:clickable="true"
         android:src="@drawable/tick"
         app:backgroundTint="#F70000" />
