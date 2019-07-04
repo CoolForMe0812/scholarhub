@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class Post extends AppCompatActivity
+public class Login extends AppCompatActivity
 {
     EditText Text1, editText3;
     FloatingActionButton clk;
@@ -39,9 +39,9 @@ public class Post extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                Toast.makeText(Post.this, "Sign up", Toast.LENGTH_SHORT);
+                Toast.makeText(Login.this, "Sign up", Toast.LENGTH_SHORT);
 
-                Intent in = new Intent(Post.this,MainActivity.class);
+                Intent in = new Intent(Login.this,SignUp.class);
                 startActivity(in);
             }
             @Override
@@ -62,7 +62,7 @@ public class Post extends AppCompatActivity
                 String steditText3 = editText3.getText().toString();
 
                 if (stText1.equals("Gavin") && steditText3.equals("gavin0701")) {
-                    Intent in = new Intent(Post.this, Home.class);
+                    Intent in = new Intent(Login.this, Home.class);
                     startActivity(in);
                 } else if (stText1.equals("") || steditText3.equals("")) {
                     Toast.makeText(getBaseContext(), "Enter both Name and Password", Toast.LENGTH_SHORT).show();
