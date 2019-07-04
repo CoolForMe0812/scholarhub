@@ -38,7 +38,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/postBy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
@@ -50,7 +50,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_below="@id/textView2"
+        android:layout_below="@id/postBy"
         android:layout_marginLeft="55dp"
         android:text="Sign Out" />
 
@@ -66,7 +66,7 @@
         tools:srcCompat="@tools:sample/avatars[0]" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Post"
@@ -80,14 +80,14 @@
         android:layout_height="wrap_content"
         android:text="Deez nuts"
         android:textStyle="bold"
-        android:layout_below="@id/textView3"
+        android:layout_below="@id/item"
         android:layout_marginLeft="20dp"/>
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView3"
+        android:layout_below="@id/item"
         android:layout_marginLeft="236dp"
         android:layout_marginTop="0dp"
         android:layout_toRightOf="@id/textView4"

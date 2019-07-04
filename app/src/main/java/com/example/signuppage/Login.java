@@ -81,8 +81,6 @@ public class Login extends AppCompatActivity
                 String db_username = dataSnapshot.child("username").getValue().toString();
                 String db_password = dataSnapshot.child("password").getValue().toString();
 
-                //print_user.setText(username.getText().toString());
-                //print_user.setText(db_username);
                 Toast.makeText(Login.this, "okay", Toast.LENGTH_SHORT).show();
 
                 if (db_username.equals(input_username.getText().toString()) && db_password.equals(input_password.getText().toString())){
