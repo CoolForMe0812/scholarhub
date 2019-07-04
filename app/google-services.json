@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1002016340039",
+    "firebase_url": "https://scholarhub-23c19.firebaseio.com",
+    "project_id": "scholarhub-23c19",
+    "storage_bucket": "scholarhub-23c19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002016340039:android:85b83e76bf9cea32",
+        "android_client_info": {
+          "package_name": "com.example.signuppage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002016340039-ss40sh224rqkh4dt82vbn3gp63rf6ufk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.signuppage",
+            "certificate_hash": "c4a858f3853c4dbe338d9876a4b1b53c1cbf06b4"
+          }
+        },
+        {
+          "client_id": "1002016340039-p1hk0bq809j53aspvj17ii5dhshbir0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpnpnYCNnJKM2AwjSdST1L3KxWaClE-WI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002016340039-p1hk0bq809j53aspvj17ii5dhshbir0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
