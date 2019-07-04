@@ -96,8 +96,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="120dp"
         android:hint="Enter description"
-        android:textColorHighlight="#ffc7eff15"
         android:textColorHint="#5E868485" />
+    <!--android:textColorHighlight="#ffc7eff15"-->
 
     <TextView
         android:id="@+id/title4"
