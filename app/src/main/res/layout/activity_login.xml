@@ -41,7 +41,7 @@
         android:layout_marginLeft="95dp" />
 
     <EditText
-        android:id="@+id/Text1"
+        android:id="@+id/username"
         android:layout_width="225dp"
         android:layout_height="50dp"
         android:layout_below="@+id/username1"
@@ -51,19 +51,19 @@
         android:textColorHint="#5E868485" />
 
     <TextView
-        android:id="@+id/password"
+        android:id="@+id/password1"
         android:layout_width="70dp"
         android:layout_height="25dp"
         android:text="Password"
-        android:layout_below="@+id/Text1"
+        android:layout_below="@+id/username"
         android:layout_centerVertical="true"
         android:layout_marginLeft="95dp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/password"
         android:layout_width="225dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/password1"
         android:layout_centerInParent="true"
         android:hint="Enter Password"
         android:textColorHighlight="#ff7eff15"
@@ -74,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Here? Sign Up Now "
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/password"
         android:layout_centerVertical="true"
         android:layout_marginLeft="95dp" />
 
@@ -82,7 +82,7 @@
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@id/editText3"
+        android:layout_below="@id/password"
         android:layout_alignParentEnd="true"
         android:layout_gravity="end|bottom"
         android:layout_marginTop="289dp"
