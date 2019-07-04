@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     MediaPlayer mediaPlayer;
 
     @Override
+<<<<<<< HEAD
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_welcome_screen);
@@ -27,6 +28,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SignUp.class);
+=======
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
+//        setContentView(R.layout.activity_main);
+
+        floatingActionButton = findViewById(R.id.floatingActionButton);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Home.class);
+>>>>>>> d5f27e303a4462d75411f5569e2cd4dab27aeaf6
                 startActivity(intent);
             }
         });

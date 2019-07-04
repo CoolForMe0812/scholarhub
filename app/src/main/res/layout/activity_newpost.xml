@@ -98,6 +98,7 @@
         android:hint="Enter description"
         android:textColorHighlight="@color/grey"
         android:textColorHint="#5E868485" />
+    <!--android:textColorHighlight="#ffc7eff15"-->
 
     <TextView
         android:id="@+id/title4"
