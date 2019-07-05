@@ -72,8 +72,51 @@
             android:layout_toRightOf="@id/textView1"
             tools:srcCompat="@tools:sample/avatars[0]" />
     </com.google.android.material.card.MaterialCardView>
+<<<<<<< HEAD
+=======
+
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="67dp"
+        android:text="I am Sum Ting Wong"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/postBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="2dp"
+        android:text="Joined in 1 June 2019" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/postBy"
+        android:layout_marginLeft="55dp"
+        android:text="Sign Out" />
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="107dp"
+        android:layout_height="99dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="66dp"
+        android:layout_toRightOf="@id/textView1"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+>>>>>>> ed640caeec7e99098f3f00d377f25a4cad6fff42
+    <TextView
+        android:id="@+id/item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Post"
@@ -87,14 +130,14 @@
         android:layout_height="wrap_content"
         android:text="Deez nuts"
         android:textStyle="bold"
-        android:layout_below="@id/textView3"
+        android:layout_below="@id/item"
         android:layout_marginLeft="20dp"/>
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView3"
+        android:layout_below="@id/item"
         android:layout_marginLeft="236dp"
         android:layout_marginTop="0dp"
         android:layout_toRightOf="@id/textView4"

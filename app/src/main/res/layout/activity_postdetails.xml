@@ -57,7 +57,7 @@
             android:id="@+id/title6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
+            android:layout_below="@+id/postBy"
             android:layout_marginLeft="22dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@id/imageView1"

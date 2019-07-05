@@ -79,7 +79,7 @@
         android:layout_marginLeft="95dp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/password"
         android:layout_width="225dp"
         android:layout_height="50dp"
         android:layout_below="@+id/password"
@@ -92,7 +92,7 @@
         android:id="@+id/floatingActionButton"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/password"
         android:layout_alignParentRight="true"
         android:layout_marginTop="21dp"
         android:layout_marginRight="28dp"
