@@ -70,7 +70,7 @@
         android:textColorHint="#5E868485" />
 
     <TextView
-        android:id="@+id/password"
+        android:id="@+id/password1"
         android:layout_width="70dp"
         android:layout_height="25dp"
         android:text="Password"
@@ -82,7 +82,7 @@
         android:id="@+id/password"
         android:layout_width="225dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/password1"
         android:layout_centerInParent="true"
         android:hint="Enter Password"
         android:textColorHighlight="#ff7eff15"
@@ -99,7 +99,7 @@
         android:foregroundGravity="bottom"
         android:clickable="true"
         app:backgroundTint="#F70000"
-        app:srcCompat="@android:drawable/ic_menu_add" />
+        app:srcCompat="@drawable/tick" />
 
 
 
