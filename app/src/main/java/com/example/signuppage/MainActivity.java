@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.activity_home);
-        //setContentView(R.layout.activity_welcome_screen);
+        //setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_welcome_screen);
         button = (Button)findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
