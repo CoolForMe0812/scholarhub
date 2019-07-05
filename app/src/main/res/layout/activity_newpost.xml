@@ -9,8 +9,8 @@
 
 
     <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar"/>
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar1"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"

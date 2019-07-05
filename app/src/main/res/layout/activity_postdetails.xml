@@ -8,8 +8,8 @@
     android:background="@android:color/white">
 
     <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar"/>
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar1"/>
 
     <ImageView
         android:id="@+id/imageView2"

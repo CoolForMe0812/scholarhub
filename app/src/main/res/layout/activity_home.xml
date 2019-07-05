@@ -7,8 +7,10 @@
     tools:context=".MainActivity">
 
     <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar"/>
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar1"/>
+
+
 
     <TextView
         android:id="@+id/textView1"
@@ -16,66 +18,86 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="60dp"
         android:text="Things you may be interested"
         android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        tools:srcCompat="@tools:sample/avatars[0]" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="22dp"
-        android:layout_toRightOf="@id/imageView1"
-        android:text="Sum Ting Wong" />
+        android:id="@+id/card2"
+        app:strokeWidth="2dp"
+        app:strokeColor="#ffff"
+        android:layout_below="@id/textView1"
+        android:layout_marginBottom="160dp"
+        app:cardCornerRadius="3dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_marginLeft="22dp"
-        android:layout_marginTop="5dp"
-        android:layout_toRightOf="@id/imageView1"
-        android:text="Deez nuts"
-        android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            tools:srcCompat="@tools:sample/avatars[0]" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/imageView1"
+            android:text="Sum Ting Wong" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="55dp"
+            android:layout_toRightOf="@id/imageView1"
+            android:text="Deez nuts"
+            android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="122dp"
-        android:layout_marginTop="210dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="20dp"
         android:layout_toRightOf="@id/textView2"
         android:text="3 hours ago" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/imageView1"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/book" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView2"
-        android:layout_centerInParent="true"
-        android:text="Intrested" />
+            android:src="@drawable/book" />
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="150dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="Intrested" />
+    </com.google.android.material.card.MaterialCardView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="90dp"
@@ -90,12 +112,12 @@
         android:id="@+id/floatingActionButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_below="@+id/button"
+
         android:layout_alignParentRight="true"
-        android:layout_marginTop="18dp"
-        android:layout_marginRight="20dp"
-        android:foregroundGravity="bottom"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="7dp"
         android:clickable="true"
+        android:foregroundGravity="bottom"
         app:srcCompat="@android:drawable/ic_input_add" />
 
 </RelativeLayout>
