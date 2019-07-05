@@ -2,6 +2,7 @@ package com.example.signuppage;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -24,6 +25,12 @@ public class Home extends AppCompatActivity
     firebase firebase;
     DatabaseReference ref;
     FloatingActionButton floatingActionButton;
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -66,8 +73,8 @@ public class Home extends AppCompatActivity
             public void onClick(View view)
             {
 
-                Intent intent = new Intent(Home.this, CreatePost.class);
-                startActivity(intent);
+                    Intent intent = new Intent(Home.this, CreatePost.class);
+                    startActivity(intent);
             }
         });
 

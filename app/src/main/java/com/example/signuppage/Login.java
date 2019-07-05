@@ -48,8 +48,8 @@ public class Login extends AppCompatActivity
             {
                 Toast.makeText(Login.this, "Sign up", Toast.LENGTH_SHORT);
 
-                Intent in = new Intent(Login.this,SignUp.class);
-                startActivity(in);
+                Intent intent = new Intent(Login.this, SignUp.class);
+                startActivity(intent);
             }
             @Override
             public void updateDrawState(TextPaint ds)
@@ -68,8 +68,6 @@ public class Login extends AppCompatActivity
                 String name = input_username.getText().toString();
                 String password = input_password.getText().toString();
                 validate();
-
-
             }
         });
     }
@@ -80,8 +78,6 @@ public class Login extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String db_username = dataSnapshot.child("username").getValue().toString();
                 String db_password = dataSnapshot.child("password").getValue().toString();
-
-                Toast.makeText(Login.this, "okay", Toast.LENGTH_SHORT).show();
 
                 if (db_username.equals(input_username.getText().toString()) && db_password.equals(input_password.getText().toString())){
                     Toast.makeText(Login.this, "Welcome, Soo Yong Jie", Toast.LENGTH_SHORT).show();
