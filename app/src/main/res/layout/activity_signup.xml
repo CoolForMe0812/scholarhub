@@ -83,6 +83,4 @@
         app:backgroundTint="#F70000"
         app:srcCompat="@drawable/tick" />
 
-
-
 </RelativeLayout>

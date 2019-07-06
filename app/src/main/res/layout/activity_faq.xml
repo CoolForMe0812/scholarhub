@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
         android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="Frequent Ask Questions"
         android:textStyle="bold"
         android:textSize="30dp"
@@ -22,44 +22,18 @@
 
     <TextView
         android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/title"
-        android:layout_marginTop="20dp"
-        android:text="What does this app's objectives?"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:id="@+id/textView1"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="10dp"
-        android:text="- To address the issue of one-time-use study material"
-        android:textSize="15dp"
-        android:id="@+id/textView2"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="5dp"
-        android:text="- to provide a platform for students to buy/sell second-hand study material."
-        android:textSize="15dp"
-        android:id="@+id/textView3"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="How to create a post?"
         android:textSize="20dp"
         android:textStyle="bold"
         android:id="@+id/textView4"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView4"
         android:layout_marginTop="10dp"
@@ -72,16 +46,18 @@ complete your action. "
 
     <TextView
         android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView5"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="How to save a post?"
         android:textSize="20dp"
         android:textStyle="bold"
         android:id="@+id/textView6"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView6"
         android:layout_marginTop="10dp"
@@ -92,16 +68,18 @@ interest button, the post will saved to the interested page and you can view at 
 
     <TextView
         android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView7"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="How to contact the person?"
         android:textSize="20dp"
         android:textStyle="bold"
         android:id="@+id/textView8"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView8"
         android:layout_marginTop="10dp"

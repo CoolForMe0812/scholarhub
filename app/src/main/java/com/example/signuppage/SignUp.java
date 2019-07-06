@@ -37,12 +37,10 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                firebase.setUsername(input_username.getText().toString().trim());
+                firebase.setPassword(input_password.getText().toString().trim());
+                ref.push().setValue(firebase);
                 Toast.makeText(SignUp.this, "Data saved successfully, hopefully", Toast.LENGTH_SHORT).show();
-
-                    firebase.setUsername(input_username.getText().toString().trim());
-                    firebase.setPassword(input_password.getText().toString().trim());
-                    ref.push().setValue(firebase);
-                    Toast.makeText(SignUp.this, "Data saved successfully, hopefully", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(SignUp.this, Login.class);
                 startActivity(intent);
