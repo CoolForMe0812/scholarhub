@@ -38,43 +38,43 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar"
             android:layout_marginLeft="30dp"
-
+            android:layout_marginTop="15dp"
             android:text="I am Sum Ting Wong"
             android:textSize="20dp"
             android:textStyle="bold" />
 
-
         <TextView
-            android:id="@+id/postBy"
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/postBy"
+            android:layout_below="@+id/textView1"
             android:layout_marginLeft="45dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:text="Joined in 1 June 2019" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:layout_below="@id/textView2"
             android:layout_marginLeft="65dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="80dp"
             android:text="Sign Out" />
 
 
-        <deImageView
+        <ImageView
             android:id="@+id/imageView1"
             android:layout_width="107dp"
             android:layout_height="99dp"
             android:layout_below="@id/toolbar1"
             android:layout_marginLeft="280dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/profile"
             android:layout_toRightOf="@id/textView1"
-            tools:srcCompat="@tools:sample/avatars[0]" />
+            />
 
         <androidx.viewpager.widget.ViewPager
-            android:layout_width="500dp"
+            android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_below="@+id/card2"
             android:layout_alignStart="@+id/card2"
@@ -92,14 +92,12 @@
             android:layout_marginTop="130dp"
             android:layout_marginLeft="20dp" />
 
-
-
     </com.google.android.material.card.MaterialCardView>
 
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="220dp"
         android:layout_marginTop="270dp">
 
         <TextView
@@ -107,6 +105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
             android:text="Deez nuts"
             android:textStyle="bold" />
 
@@ -115,41 +114,45 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/item"
-            android:layout_marginLeft="326dp"
-            android:layout_marginTop="0dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/textView4"
             android:text="3 hours ago" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="300dp"
-            android:layout_height="200dp"
+            android:layout_height="160dp"
             android:layout_below="@+id/textView4"
             android:layout_marginLeft="60dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:src="@drawable/book" />
+
     </com.google.android.material.card.MaterialCardView>
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="500dp"
-        android:layout_height="20dp"
+        android:layout_height="40dp"
         android:layout_below="@+id/card2"
         android:layout_alignStart="@+id/card2"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="50dp"
         android:background="@color/grey">
     </androidx.viewpager.widget.ViewPager>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_marginTop="560dp">
+        android:layout_height="50dp"
+        android:layout_marginTop="510dp">
+
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/faq"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
         android:textColor="@color/black"
         android:text="FAQ" />
+
     </com.google.android.material.card.MaterialCardView>
 
     <androidx.viewpager.widget.ViewPager
@@ -157,16 +160,17 @@
         android:layout_height="50dp"
         android:layout_below="@+id/card2"
         android:layout_alignStart="@+id/card2"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="100dp"
         android:background="@color/grey">
     </androidx.viewpager.widget.ViewPager>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton4"
         android:layout_width="70dp"
-        android:layout_height="40dp"
+        android:layout_height="70dp"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginRight="20dp"
 
         android:clickable="true"
         android:foregroundGravity="bottom"
@@ -181,7 +185,5 @@
         app:itemIconTint="@android:color/black"
         app:itemTextColor="@android:color/black"
         app:menu="@menu/main_menu" />
-
-
 
 </RelativeLayout>
