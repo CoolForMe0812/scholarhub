@@ -16,27 +16,6 @@ public class FAQ extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faq);
 
-        // Navigation intent
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.home:
-                        Intent h = new Intent(FAQ.this, Home.class);
-                        startActivity(h);
-                        break;
-                    case R.id.interests:
-                        Intent i = new Intent(FAQ.this, Interest.class);
-                        startActivity(i);
-                        break;
-                    case R.id.profile:
-                        Intent p = new Intent(FAQ.this, Profile.class);
-                        startActivity(p);
-                        break;
-                }
-                return false;
-            }
-        });
+
     }
 }

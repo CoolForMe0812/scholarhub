@@ -27,29 +27,6 @@ public class Interest extends AppCompatActivity {
                 button.setText("Not Interested");
             }
         });
-
-        // Navigation intent
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.home:
-                        Intent h = new Intent(Interest.this, Home.class);
-                        startActivity(h);
-                        break;
-                    case R.id.interests:
-                        Intent i = new Intent(Interest.this, Interest.class);
-                        startActivity(i);
-                        break;
-                    case R.id.profile:
-                        Intent p = new Intent(Interest.this, Profile.class);
-                        startActivity(p);
-                        break;
-                }
-                return false;
-            }
-        });
     }
 }
 
