@@ -13,7 +13,7 @@
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="20dp"
         android:layout_below="@id/toolbar"
         android:background="@color/grey">
 
@@ -66,6 +66,7 @@
         android:layout_below="@+id/password1"
         android:layout_centerInParent="true"
         android:hint="Enter Password"
+        android:inputType="textPassword"
         android:textColorHighlight="#ff7eff15"
         android:textColorHint="#5E868485" />
 
@@ -98,13 +99,11 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_gravity="end|bottom"
-        android:layout_marginTop="86dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="20dp"
         android:clickable="true"
         android:foregroundGravity="bottom"
         app:backgroundTint="#F70000"
         app:srcCompat="@drawable/tick" />
-
 
 </RelativeLayout>

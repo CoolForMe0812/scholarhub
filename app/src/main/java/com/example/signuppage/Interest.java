@@ -19,9 +19,9 @@ public class Interest extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view){
-                Intent intent = new Intent(Interest.this, Home.class);
-                startActivity(intent);
+            public void onClick(View view)
+            {
+                button.setText("Not Interested");
             }
         });
     }

@@ -80,7 +80,7 @@ public class Login extends AppCompatActivity
                 String db_password = dataSnapshot.child("password").getValue().toString();
 
                 if (db_username.equals(input_username.getText().toString()) && db_password.equals(input_password.getText().toString())){
-                    Toast.makeText(Login.this, "Welcome, Soo Yong Jie", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this, "Welcome, " + db_username, Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(Login.this, Home.class);
                     startActivity(intent);
                 }

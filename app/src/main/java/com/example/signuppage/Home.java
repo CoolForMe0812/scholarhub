@@ -82,8 +82,12 @@ public class Home extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(Home.this, Interest.class);
-                startActivity(intent);
+                String btnTxt = button.getText().toString();
+                if (btnTxt.equals("Interested"))
+                {
+                    button.setText("Not Interested");
+                }
+                else button.setText("Interested");
             }
         });
 
@@ -133,7 +137,6 @@ public class Home extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-
                     Intent intent = new Intent(Home.this, CreatePost.class);
                     startActivity(intent);
             }
