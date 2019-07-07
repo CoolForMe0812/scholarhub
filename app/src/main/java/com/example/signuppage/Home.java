@@ -3,6 +3,7 @@ package com.example.signuppage;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -25,12 +27,6 @@ public class Home extends AppCompatActivity
     firebase firebase;
     DatabaseReference ref;
     FloatingActionButton floatingActionButton;
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return true;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -47,8 +43,12 @@ public class Home extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(Home.this, Interest.class);
-                startActivity(intent);
+                String btnTxt = button.getText().toString();
+                if (btnTxt.equals("Interested"))
+                {
+                    button.setText("Not Interested");
+                }
+                else button.setText("Interested");
             }
         });
 
@@ -72,13 +72,33 @@ public class Home extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-
                     Intent intent = new Intent(Home.this, CreatePost.class);
                     startActivity(intent);
             }
         });
 
+        // Navigation intent
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.home:
+                        Intent h = new Intent(Home.this, Home.class);
+                        startActivity(h);
+                        break;
+                    case R.id.interests:
+                        Intent i = new Intent(Home.this, Interest.class);
+                        startActivity(i);
+                        break;
+                    case R.id.profile:
+                        Intent p = new Intent(Home.this, Profile.class);
+                        startActivity(p);
+                        break;
+                }
+                return false;
+            }
+        });
 
-        
     }
 }

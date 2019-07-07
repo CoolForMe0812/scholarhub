@@ -10,13 +10,21 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar"/>
 
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/grey">
+
+    </androidx.viewpager.widget.ViewPager>
+
     <TextView
         android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
         android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="60dp"
         android:text="Sign Up"
         android:textStyle="bold"
         android:textSize="25dp"/>
@@ -27,7 +35,7 @@
         android:layout_height="100dp"
         android:layout_below="@+id/signup"
         android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/button"
         android:text="Upload Photo"
         android:textColorLink="#00F12B2B" />
@@ -70,16 +78,28 @@
         android:textColorHighlight="#ff7eff15"
         android:textColorHint="#5E868485" />
 
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/password"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/grey">
+
+    </androidx.viewpager.widget.ViewPager>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_below="@+id/password"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="80dp"
-        android:layout_marginRight="28dp"
-        android:foregroundGravity="bottom"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="5dp"
         android:clickable="true"
+        android:foregroundGravity="bottom"
         app:backgroundTint="#F70000"
         app:srcCompat="@drawable/tick" />
 

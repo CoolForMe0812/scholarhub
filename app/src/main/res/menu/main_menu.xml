@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/action_home"
+        android:id="@+id/home"
         android:enabled="true"
         android:icon="@drawable/ic_action_home"
         android:title="Home" />
     <item
-        android:id="@+id/action_interested"
+        android:id="@+id/interests"
         android:enabled="true"
         android:icon="@drawable/ic_action_interest"
         android:title="Interests" />
     <item
-        android:id="@+id/action_profile"
+        android:id="@+id/profile"
         android:enabled="true"
         android:icon="@drawable/ic_action_profile"
         android:title="Profile" />

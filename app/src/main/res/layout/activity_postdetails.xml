@@ -41,7 +41,7 @@
             android:layout_marginTop="0dp"
             android:layout_marginLeft="300dp"
             android:background="@drawable/circle"
-            tools:srcCompat="@tools:sample/avatars[0]" />
+            android:src="@drawable/profile" />
 
         <TextView
             android:id="@+id/title7"
