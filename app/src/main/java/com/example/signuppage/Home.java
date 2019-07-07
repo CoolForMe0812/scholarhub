@@ -28,45 +28,6 @@ public class Home extends AppCompatActivity
     DatabaseReference ref;
     FloatingActionButton floatingActionButton;
 
-    // Menu button intent
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-
-        if (id == R.id.home) {
-            Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(Home.this, Home.class);
-            this.startActivity(intent);
-            return true;
-        }
-
-        if (id == R.id.interests) {
-            Toast.makeText(this, "interests", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(Home.this, Interest.class);
-            this.startActivity(intent);
-            return true;
-        }
-
-        if (id == R.id.profile) {
-            Toast.makeText(this, "profile", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(Home .this, Profile.class);
-            this.startActivity(intent);
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -106,32 +67,6 @@ public class Home extends AppCompatActivity
             }
         });
 
-        // Navigation intent
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.home:
-                        Intent h = new Intent(Home.this, Home.class);
-                        startActivity(h);
-                        Toast.makeText(Home.this, "HOME", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.interests:
-                        Intent i = new Intent(Home.this, Interest.class);
-                        startActivity(i);
-                        Toast.makeText(Home.this, "INTEREST", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.profile:
-                        Intent p = new Intent(Home.this, Profile.class);
-                        startActivity(p);
-                        Toast.makeText(Home.this, "PROFILE", Toast.LENGTH_SHORT).show();
-                        break;
-                }
-                return false;
-            }
-        });
-
         floatingActionButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -142,7 +77,28 @@ public class Home extends AppCompatActivity
             }
         });
 
+        // Navigation intent
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.home:
+                        Intent h = new Intent(Home.this, Home.class);
+                        startActivity(h);
+                        break;
+                    case R.id.interests:
+                        Intent i = new Intent(Home.this, Interest.class);
+                        startActivity(i);
+                        break;
+                    case R.id.profile:
+                        Intent p = new Intent(Home.this, Profile.class);
+                        startActivity(p);
+                        break;
+                }
+                return false;
+            }
+        });
 
-        
     }
 }
